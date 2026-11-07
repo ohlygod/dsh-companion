@@ -1,0 +1,8 @@
+# companion_v2 内核需要的运行时依赖（都是纯 Python / 平台 wheel）
+# 装进插件实际使用的那个 Python：
+#   python -m pip install -r requirements.txt
+regex>=2024.11.6
+lunardate>=0.2
+
+# 可选：农历换算的另一种实现（regex 必需；lunardate/lunarcalendar 二选一即可）
+# lunarcalendar>=0.0.9

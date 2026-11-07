@@ -1,0 +1,8 @@
+# dsh-companion —— 把陪伴角色接进 DSH
+#
+# 一行 entry：名字 dsh-companion 解析到本包入口 lib/index.js。
+# 不要在 config 里写死 Python 路径；插件会自己找 DSH 自带的 Python。
+
+- insert:
+    - id: companion
+      name: 'dsh-companion'

@@ -1,0 +1,23 @@
+{
+  "name": "dsh-companion",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "DSH 陪伴核心：把 companion_v2 接进 DSH，角色有记忆、状态和日程，模型复用 DSH 已配置的模型",
+  "keywords": ["dsh", "dsh-plugin", "companion", "persona", "memory"],
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "dsh_host", "companion_v2", "bridge.py", "cordis.patch.yml", "README.md"],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "smoke": "node smoke.mjs",
+    "e2e": "python e2e_bridge.py && python e2e_close.py"
+  },
+  "license": "SEE LICENSE IN README.md"
+}
